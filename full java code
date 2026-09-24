@@ -1,0 +1,325 @@
+// JAVA PROGRAMMING LANGUAGE
+// SYNTAX
+// CODE PROPER
+public class Main {
+    public static void main(String[] agrs){
+        System.out.println("Hello, Worldumber
+double // double precisions of decimal number
+float // single precision of decimal number 'f'
+char // a single character of text (single quotes)
+boolean // TRue or False
+String / not primitive texet
+
+// Declaring variable of defferent data types---
+int        age            =       20        ;
+^           ^             ^       ^         ^
+types       variables    EQ       value     close tag
+int age = 20;
+double price = 20.30;
+float weight = 70.6f;
+char garde = 'A';
+boolean isStudent = true;
+String name = "Alice";
+
+//---Output using System.out.println-----
+System.out.println("Name: "  +name);// Alice
+System.out.println("Age; "   +age);//20
+System.out.println("Prince:"  +price);//20.30
+System.out.println("Weight: " +weight);//70.60
+Sytem.out.println("Grade: "    +grade);//A
+System.out.println("Is Student: "   +isstudent);//True
+
+//--- Getting input using Scanner-----
+impport java.util.Scanner;// Syntax for calling the input fuction on the variable in the module Scannere
+public class Main {
+    public static void main(Strin[]agrs){
+        Scanner scanner =  new Scanner(System.in); // to read
+        // Reading the one word(stop at whitespac);
+     System.out.println("\nEnter your city: ");
+     String userCity =scanner.next(); // reads one word
+     System.out.ptintln("ou live in:  "+usserCity);
+
+       // Reading the full line (including spaces)
+        scanner.nextline()// clear leftover newline from previous next()
+            System.out.print("Enter a sentence about yourself: ");
+        String fullSentence = scanner.nextline();// read the entire line or paragraph
+        System.out.println("You said: "+fullsentence);
+
+        scanner.close();
+//Operator and expretion
+// =,-,*,/,&&,\\,<,>,<=,>=,!=
+//Arethmetic Operation
+int a =10, b =3;
+System.out.println("a + b = "+(a+b));
+System.out.println("a - b = "+(a-b));
+System.out.println("a * b = "+(a*b));
+System.out.println("a / b = "+(a/b));
+System.out.println("a % b = "+(a%b));
+
+Double x = 10, y =3;
+        int a =10, b =3;
+System.out.println("x / y = "+(x/y));
+
+// Relational operator (return bool: 1 or 0)
+System.out.println("\na == b = "+(a==b));
+System.out.println("a != b = "+(a!=b));
+System.out.println("a < b = "+(a<b));
+System.out.println("a > b = "+(a>b));
+System.out.println("a >= b = "+(a>=b));
+System.out.println("a <= b = "+(a<=b));
+
+// Logical operators
+boolean p = true , q = false;
+System.out.println("\np &&  q: "+(p&&q)); // AND
+System.out.println("p ||  q: "+(p||q)); // OR
+System.out.println("!p :  "+(!p)); // NOT TRUE
+System.out.println("!q :  "+(!q)); // NOT FALSE
+
+// Assignment operators
+// +=, -=, *=, /=
+int score = 50;
+score += 10;
+System.out.println("nscore after += 10:" +score);
+score *= 2;
+System.out.println("score after *= 2: "+score);
+
+// increment / dcrement operators
+int counter =5;
+        System.out.println("'\ncounter++ (post): '"+counter++); //5
+        System.out.println("counter now++ (post): "+counter++); //6
+        System.out.println("++counter (pre): '"+counter++); //7
+
+// control flow(if/else. switch case loops(for.while. do while))
+
+System.out.println("Enter your exam score: ";);
+        int Examscore =  scanner.nextInt();
+
+        if (Examscore >=90){
+            System.out.println("Grade:A");
+        } else if (Examscore >=80){
+            System.out.println("Grade:B");
+        } else if (Examscore >=70){
+            System.out.println("Grade:C");
+        } else{
+            System.out.println("Grade:F")
+                }
+// Switch case statement
+System.out.println("\nEnter a day number (1-7)");
+int day = scanner.nextInt();
+
+swith (day) {
+     case 1: System.out.println("Monday");break;
+     case 2: System.out.println("Tuesday");break;
+     case 3: System.out.println("Wednesday");break;
+     case 4: System.out.println("Thursday");break;
+     case 5: System.out.println("Friday");break;
+     case 6: System.out.println("Saturday");break;
+     case 7: System.out.println("Sunday");break;
+    default: System.out.println("Invalid day");break;
+
+}
+// loop(for, while, do while)
+
+System.out.println("\nCounting 1 to 5 with a for loop:");
+        for(int i= 1; i<=5; i++) {
+            System.out.println(i + " ");
+        }
+        System.out.println();
+
+//while loops
+System.out.println("\nCounting down from with a while loop:");
+        int n = 5;
+        while (n > 0){
+            n--;
+        }
+System.out.println();
+
+// do while loop
+System.out.println("\ndo while example: ");
+int x=0;
+do{
+    System.out.println("x= "+x);
+    x++;
+} while(x<3);
+
+// break and continue
+System.out.println("\nSkipping 3 using continue, stopping at 7 using break: ");
+        for(int i =1; i <=10; i++){
+        if (i == 3) continue 
+        if (i == 7) break;
+        System.out.println(i +" ");
+        }
+System.out.println();
+// methods
+// takes double, return its square 
+        static double square(double n){
+        return n * n;
+    }
+takes two ints, returs thier sum 
+static int add(int a, int b){
+ return a + b;
+}
+// void fuction: performs an action, return nothing 
+static void greet(String name){
+    System.out.printpln("Hello, "+ name+"! Welcome to Java.")
+        }
+// Recursive fuction/: calls itself with smaller problems
+        static int factorial(int n){
+            if(n <= 1){
+                return 1;
+            }
+            retunr n * factorial(n-1);
+        }
+    static int multiply(int a, int b){
+        return a * b;
+    }
+    static double multiply (double a, double b){
+        return a * b:
+            }
+// power, exponent
+static int power(int base, int exponent){
+    int result =1;
+    for (int i=0; i <exponent; i++){
+        result *= base;
+    }
+    return result;
+}
+//base 
+static int power(int base){
+    return power(base, 2)
+        }
+// Calling Function
+int sum = add(5,7);
+System.out.println("5 + 7=" +sum);
+
+//Squareroot
+double sq = square(4.5);
+    System.out.println("4.5 squared="= sq );
+
+    greet("Maria";)
+
+System.out.println("5! =" +factorial(5));
+
+System.out.println("multiply(2,3)="+ multiply(2,3));
+System.out.println("multiply(2.5,4.0)="+ multiply(2.5,4.0));
+
+System.out.println("power(5)="+power(5));
+System.out.println("power(5,3)="+power(5,3));
+scanner.close()
+    }
+}
+
+//New Java compiler
+//intro card
+import java.util.scanner;
+
+public class Main{
+    public static vopid Main(Stirng[]agrs){
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("What is your name? ");
+        Stirng name = scanner.nextLine();
+        System.out.print("What is your age? ");
+        int age = Integer.parseInt(scanner.nextLine());
+
+        System.out.println("\n------INTRO CARD------");
+        System.out.println("Name: "+name);
+        System.out.println("Age: "+age);
+        System.out.println("In 5 years, "+ name + "will be "+(age +5)+ "years odl.".)
+            }
+}
+//new java compiler
+//arraylist
+import java.util.Arraylist;
+import java.util.scanner;
+
+class Contact{
+    public String name:
+    public String phone:
+
+    public contact(String name, String phone){
+        this.name =name;
+        this.phone =phone;
+    }
+    public String toString(){
+        return name+": "+phone:
+            }
+}
+public class Main{
+    static Arraylist<Contact>contact = new ArrayList<>();
+    publis static void Mian(Stroing[]args){
+
+        contacts.add(new Contact("Ana Reyes", "0917-123-4567"));
+        contacts.add(new Contact("Mark Cruz", "0928-765-4321")):
+
+        System.out.println("All contacts: ");
+        for (Contact c: contacts)System.out.println(c);
+
+        search("Ana Reyes");
+        delete("Mark Cruz");
+
+        System.out.println("\nAfter delete:")
+        for(Contact c: contacts)System.out.pritnln(c);
+
+    }
+    static void seacrh(String name){
+        for(Contact c: contacts){
+        if(c.name.equalsIgnoreCase(name)){
+        System.out.println("Found: "+c);
+            return;
+        }
+ }
+        System.out.print(name+"not found.");
+    }
+    static void delete(String name){
+        contacts.removeIf(c->c.name.equalsIgnoreCase(name)){
+        }
+}
+import java.util.Arraylist;
+import java.util.scanner;  
+
+class Contact {
+    private String name;
+    private String phone;
+
+    public Contact(String name, String phone){
+        this.name =name;
+        this.phone =phone;
+    }
+
+    public String getName() {return name; }
+    public String getPhone() {return phone; }
+    public void setPhone(String phone) {this.phone =phone;}
+
+    public String toString(){
+        return name + ": "phone;
+    }
+}
+class Contactbook{
+    peivate Arraylist<Contact> contacts =new Arraylist<>();
+
+    public void add(String name, String phone){
+    contacts.add(new Contact(name,phone));
+    }
+    piblic contact saerch(String name){
+        for(Contact c: contacts){
+            if(c.getName().equalsIganoreCase(name))return c;
+        }
+        return null;
+    }
+public void listAll(){
+    for(Contact c: contacts)System.out.println(c);
+    }
+}
+public class Main{
+    public static void Main(String[]args){
+        ContactBooks book = new ContactBook();
+        book.add("An Reyes", "0917-123-456");
+        book.add("Mark Cruz", "0928-765-4321");
+        book.listAll();
+
+        Contact Found = book.search("Mark Cruz");
+        System.out.println("Search result:" + found !=null?
+                          found: "not found");
+    }
+}
